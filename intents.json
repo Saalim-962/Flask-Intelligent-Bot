@@ -1,0 +1,248 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking :)", "Good to see you again :)", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time","ok","k","okay"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through our website and provide you assistance. What do you want to know about our company?", "Offering support for you, What you want to know about us?"],
+         "context": [""]
+        },
+        {"tag": "aboutus",
+         "patterns": ["Tell me about your company?", "About your company", "Tell me about your company", " History ", " Your work ", " Aboutus ", "Tell me about your history"],
+         "responses": ["Techsum IT Solutions Pvt Ltd (Formerly TechSum Solutions) was incorporated in April 2016 to provide best-in-class services to its clients. For the last 4 years, we are providing a host of services to our clients in the field of ICT (Information Communication Technology),Do you want to know more about our services? (Type: ryb)"],
+         "context": [""]
+        },
+        {"tag": "ryb",
+                "patterns": ["ryb"],
+                "responses": ["We provide services like Digital Evaluation, Online Assessments, Paper, and Pencil Exams, Result Processing, Computer lab set up, Software development, and Testing, Technical audit of Infrastructure, Manpower Deployment to various clients across Government and Private sector. ;)"],
+                "context": [""]
+               },
+        {"tag": "Digital_Evaluation",
+                "patterns": ["What you do in digital evaluation","Tell me about digital evaluation","Digital Evaluation","Your services in digital evaluation","What is digital evaluation?","What is digital evaluation"],
+                "responses": ["In our digital evaluation system, we enable evaluators to mark a scanned script or online response on the computer screen itself, rather than on paper. For more information, you can go to -> (contact us)."],
+                "context": [""]
+               },
+        {"tag": "Result_Processing",
+                "patterns": ["What you do in result processing","Tell me about result processing","Digital Evaluation","Your services in result processing","What is result processing?","What is result processing","result processing"],
+                "responses": ["Result processing is a part of post-examination process that needs accuracy and transparency as the betterment of students is based on their report card and grade history.","The Result Processing Module is designed in such a way that gives power to administrator in managing all the activities from single interface."],
+                "context": [""]
+               },
+        {"tag": "Online_Assesssment",
+                "patterns": ["What you do in online assessments","Tell me about online assessments","Online Assessments","Your services in online assessments","What is online assessments?","What is online assessments","online assessments","what is paper and pencil exam","paper and pencil","exam","what is paper and pencil exam?"],
+                "responses": ["We do online assessments of paper and pencil tests. If you want us to conduct the assessment please mail or contact our team. For more information, you can go to -> (contact us)."],
+                "context": [""]
+               },
+        {"tag": "Computer_lab",
+                "patterns": ["What you do in computer lab","Tell me about computer lab setup","Computer lab setup","Your services in computer lab","How can i setup computer lab?","What is computer lab setup","Computer lab setup"],
+                "responses": ["Owing to the presence of our proficient IT members, we offer a wide range of Computer Lab Setup Service to our valued patrons. These services are offered by qualified networking professionals. In addition to this, customers can avail themselves of this service from us at industry-leading rates."],
+                "context": [""]
+               },
+        {"tag": "Technical_audit",
+                "patterns": ["What you do in technical audit  of infrastructure ","Tell me about technical audit  of infrastructure","technical audit  of infrastructure","Your services in technical audit  of infrastructure","How can i do technical audit  of infrastructure?","What is technical audit  of infrastructure","Technical audit  of infrastructure"],
+                "responses": ["With the support of our talented team of professionals, we are engaged in providing Technical Auditing service"],
+                "context": [""]
+               },
+        {"tag": "Manpower",
+                "patterns": ["What you do in manpower deployment","Tell me about manpower deployment","manpower deployment","Your services in manpower deployment","How can i do manpower deployment?","What is manpower deployment","Manpower deployment"],
+                "responses": ["We provide Manpower Services has been started with a vision to offer ideal solutions to the Manpower needs of companies ranging from small to large across the industries in India"],
+                "context": [""]
+               },
+        {"tag": "Services",
+                "patterns": ["What service you provide","Services"],
+                "responses": ["We provide different services to our clients which you can find on our services section.Do you want me to list all services here? (Type: tsl) for getting list"],
+                "context": [""]
+        },
+        {"tag": "tsl",
+                "patterns": ["tsl"],
+                "responses": ["1)Software developement  2)Web designing 3)Digital marketing and Integration  4)Mobile app development 5)Software testing"],
+                "context": [""]
+        },
+        {"tag": "SOFTWARE_DEVELOPMENT",
+         "patterns": ["What service you provide in software developement","Services in software development","Software developement"],
+         "responses": ["1)Architecture and Design \n 2)Prototyping \n 3)Component Design and Integration \n 4)Maintenance \n 5)Quality Assurance \n Contact us on email: Info@techsumsolution.com"],
+         "context": [""]
+        },
+        {"tag": "WEB_DESIGNING",
+         "patterns": ["What service you provide in web designing","Services in web designing","Web designing"],
+         "responses": ["1)Web developing, \n2)Custom web designing, \n3)Website maintenance 4)Personalized e-commerce website \nFor more information Contact us on email: Info@techsumsolution.com"],
+         "context": [""]
+        },
+        {"tag": "DIGITAL_MARKETING",
+         "patterns": ["What service you provide in digital marketing","Services in digital marketing","Digital marketing"],
+         "responses": ["1)Search Engine Marketing \n 2)Social Media Advertising \n3)Search Engine Optimization \nIf you want a demo Contact us on email: Info@techsumsolution.com"],
+         "context": [""]
+        },
+        {"tag": "MOBILE_APP_DEVELOPMENT",
+         "patterns": ["What service you provide in MOBILE APP DEVELOPMENT","Services in MOBILE APP DEVELOPMENT","Mobile app development"],
+         "responses": ["1)Custom mobile apps \n 2)Android app \n 3)Ios apps \n 4)Cross Platform  \nContact us on  email: Info@techsumsolution.com"],
+         "context": [""]
+        },
+        {"tag": "SOFTWARE_TESTING",
+         "patterns": ["What service you provide in Software testing","Services in  Software testing","Software testing","Software testing ","What you do in software testing"],
+         "responses": ["1)Manual Testing \n 2)Automation Testing \n 3)Database Testing \n 4)Mobile Application testing  \n 5)E-commerce testing"],
+         "context": [""]
+        },
+        {"tag": "sft",
+                "patterns": ["What is Software testing","What is mean by  Software testing"," Can you explain software testing"],
+                "responses": ["The process or method of finding error/s in a software application or program so that the application functions according to the end user's requirement is called software testing."],
+                "context": [""]
+        },
+        {"tag": "csft",
+                "patterns": ["What you do in software testing"],
+                "responses": ["We find error/s in a software application or program so that the application functions according to the end user's requirement is called software testing."],
+                "context": [""]
+        },
+        {"tag": "mft",
+                "patterns": ["What is manual testing","What is mean by  manual testing"," Can you explain manual testing"],
+                "responses": ["Manual testing is a software testing process in which test cases are executed manually without using any automated tool."],
+                "context": [""]
+        },
+        {"tag": "cmft",
+                "patterns": ["What you do in manual testing"],
+                "responses": ["In this testing we execute testing without using any automation tool"],
+                "context": [""]
+        },
+        {"tag": "dft",
+                "patterns": ["What is database testing","What is mean by  database testing"," Can you explain database testing"],
+                "responses": ["Database Testing is a type of software testing that checks the schema, tables, triggers etc. of the database under test."],
+                "context": [""]
+        },
+        {"tag": "cdft",
+                "patterns": ["What you do in database testing"],
+                "responses": ["Here we do testing for databases of the clients Contact our team for more details"],
+                "context": [""]
+        },
+        {"tag": "maft",
+                "patterns": ["What is mobile testing","What is mobile application testing","What is mean by  mobile application testing"," Can you explain mobile application testing"],
+                "responses": ["Mobile testing is the process by which mobile apps are tested for functionality, usability, and consistency."],
+                "context": [""]
+        },
+        {"tag": "cmaft",
+                "patterns": ["What you do in mobile testing","What you do in mobile application testing"],
+                "responses": ["Here we do testing for Mobile Applications of the clients Contact our team for more details"],
+                "context": [""]
+        },
+        {"tag": "eft",
+                "patterns": ["What is e commerce testing","What is e commerce testing","What is mean by  e commerce testing"," Can you explain e commerce testing"],
+                "responses": ["eCommerce testing is defined as testing of an eCommerce (online shopping) application. It helps in the prevention of errors and adds value to the product by ensuring conformity to client requirements."],
+                "context": [""]
+        },
+        {"tag": "ceft",
+                "patterns": ["What you do in e commerce testing","What services you provide in e commerce testing"],
+                "responses": ["Here we do testing for E commerce of the clients Contact our team for more details"],
+                "context": [""]
+        },
+        {"tag": "SEO",
+                "patterns": ["What service you provide in SEO ","Services in  SEARCH ENGINE OPTIMIZATION","SEO","seo","SEO services"],
+                "responses": ["We provide SEO services that include on-page optimization and off-page optimization, including things like meta tag and page title optimization, on-page content optimization, building backlinks, and utilizing social media."],
+                "context": [""]
+        },
+        {"tag": "cseo",
+                "patterns": ["What is SEO","What is mean by  SEO"," Can you explain SEO"],
+                "responses": ["SEO stands for search engine optimization, which is a digital marketing strategy that focuses on your website's presence in search results on search engines like Google."],
+                "context": [""]
+        },
+        {"tag": "Products",
+                "patterns": ["What types of products you provide","Products you provide","Products"],
+                "responses": ["We provide many products which you can find in our products section or if you want I can list all of them here ( Type: Lpds) to list here."],
+                "context": [""]
+        },
+        {"tag": "Lpds",
+                "patterns": ["Lpds"],
+                "responses": ["1)OPD Management System 2)Techsum Payroll Management System 3)GST billing Management Software 4)Mobile Management System 5)Hospital Management System\nIf you want to know more Contact us on  email: Info@techsumsolution.com"],
+                "context": [""]
+        },
+        {"tag": "price",
+                "patterns": ["What is price for digital evaluation?","What is price for Online Assessments","What is price for paper and pencil exams?","What is price for result processing?", "What is price for computer lab set up?","What is price for software development", "What is price for testing","What is price for technical audit of infrastructure?","What is price for manpower deployment?","Prices for your products","Prices for your products?","Prices for your services?","Prices for your services","What is price for software testing","Price for software testing","Price for e commerce testing","What is price for e commerce testing","Price for  manual testing","What is price for manual testing","Price for automation testing","What is  your price for automation testing","Price for mobile application testing","What is price for mobile application testing","Price for database testing","What is price for database testing"],
+                "responses": ["For knowing prices Please mail or call us...","Mail or contact our team for prices :)"],
+                "context": [""]
+        },
+        {"tag": "OPD_MANAGEMENT_SYSTEM",
+                "patterns": ["What service you provide in OPD","Services in  OPD ","OPD"],
+                "responses": ["Outpatient Management System (OPDMS) for Hospitals, Nursing Homes and Medical Centres Types 1)Patients Management 2)Doctors Management 3)OPD Management 4)OPD Prescriptions 5)Reports and Summaries 6)Utilities 7)Billing and Invoicing \nIf you want to know more Contact us on  email: Info@techsumsolution.com"],
+                "context": [""]
+        },
+        {"tag": "TECHSUM_PAYROLL_MANAGEMENT SYSTEM",
+                "patterns": ["What service you provide in TECHSUM PAYROLL","Services in PAYROLL"],
+                "responses": ["Payroll Management System is a method of administering employees' salaries in an organization.The package generates all outputs & statutory reports required by a Payroll applicationOutput is viewable on Screen;    also output is viewable and can be saved in a file format like (Excel, Acrobat and CSV).","Services we provide  1)Manage employee information efficiently 2)Create a new payroll month & process salary 3) Calculate the salary on the basis of attendance 4) Filing of various returns related to payroll 5) Employees expense managements (bill)"],
+                "context": [""]
+        },
+        {"tag": "Mobile_Management_System",
+                "patterns": ["What service you provide in Mobile Management System","Services in Mobile Management System","What you do in mobile management system"],
+                "responses": ["Provide functionalities required to manage your entire mobile repair's business. In this application there are two different users Admin and User.Generate salary slip of employees. Add individual mobile items and assign rate, CGST, SGST for mobile items.Track the details,Pending order,payment has been received or pending."],
+                "context": [""]
+        },
+        {"tag": "Hospital_Management_System ",
+                "patterns": ["What service you provide in Hospital Management ","Services in Hospital System"],
+                "responses": ["A hospital management system (HMS) is a computer or web based system that facilitates managing the functioning of the hospital or any medical set up. It integrates all the information regarding patients, doctors, staff, hospital administrative details etc. into one software. \nIf you want to know more Contact us on  email:Info@techsumsolution.com","Service it provide Generate bill just by selecting the patient name 1)Keep track of the patients visits 2)Accounts 3)Medicine stock maintainace 4)Multi Location (within the same premises) 5)Multi Branch 6)Supports multiple users 7) Admin Control"],
+                "context": [""]
+        },
+        {"tag": "GST_BILLING_SOFTWARE ",
+                "patterns": ["What service you provide in GST ","Services in GST SOFTWARE"],
+                "responses": ["1)Pharmacy store application 2)Computer shoppee 3)Furniture store  4)Hardware store 5)Garment Store \nContact us on  email: Info@techsumsolution.com"],
+                "context": [""]
+        },
+        {"tag": "Pharmacy_Store_Application",
+                "patterns": ["What service you provide in Pharmacy Store Application","Services in Pharmacy Store Application"],
+                "responses": ["Pharmacy store application is used for pharmacy billing purpose. This application is developed by PHP and Laravel framework. It is design and develop for pharmacy store and medicine shop. \nContact us on  email: Info@techsumsolution.com"],
+                "context": [""]
+        },
+        {"tag": "Computer_Shoppe_Application",
+                "patterns": ["What service you provide in Computer Shoppe Application","Services in Computer Shoppe Application"],
+                "responses": ["Computer shoppee billing process involves receiving billing records from various networks Counterwise Cash and Sales,Userwise transaction activity report,Productwise Monthly sales/Purchase comparison, Customerwise Details\nContact us on  email: Info@techsumsolution.com"],
+                "context": [""]
+        },
+        {"tag": "Furniture_Store_Application",
+                "patterns": ["What service you provide in Furniture Store Application","Services in Furniture Store Application"],
+                "responses": ["Furniture store billing process involves receiving billing records from various networks Counterwise Cash and Sales,Userwise transaction activity report,Productwise Monthly sales/Purchase comparison, Customerwise details \nContact us on  email: Info@techsumsolution.com"],
+                "context": [""]
+        },
+        {"tag": "Hardware_Store_Application",
+                "patterns": ["What service you provide in Hardware Store Application SOFTWARE","Services in Hardware Store Application"],
+                "responses": ["Hardware Store billing process involves receiving billing records from various networks Counterwise Cash and Sales,Userwise transaction activity report,Productwise Monthly sales/Purchase comparison, Customerwise details \nContact us on  email: Info@techsumsolution.com"],
+                "context": [""]
+        },
+        {"tag": "aboutchat",
+                "patterns": ["Tell me about yourself?", "who are you", "You are chatbot", " What is your work "],
+                "responses": ["I am Intelligent Chatbot here to help and guide you :)"],
+                "context": [""]
+        },
+        {"tag": "chatname",
+                "patterns": ["What is your name"],
+                "responses": ["My name is Intelligent Chatbot"],
+                "context": [""]
+        },
+        {"tag": "Contact",
+                "patterns": ["Contact details","Give me your contact details","Your contact","Mail","Your mail","Mail id","Your Mail id","Your phone number","Your details","Your address","adress details","contact"],
+                "responses": ["You can find all the contact details in our contact section,Still if you want I can list them here (Type c)"],
+                "context": [""]
+        },
+        {"tag": "c",
+                "patterns": ["c"],
+                "responses": ["Email: [Info@techsumsolution.com] Phone:9589206597"],
+                "context": [""]
+        },
+        {"tag": "Garment_Store_Application",
+                "patterns": ["What service you provide in Garment Store BILLING SOFTWARE","Services in Garment Store Application BILLING SOFTWARE"],
+                "responses": ["Garement store billing process involves receiving billing records from various networks Counterwise Cash and Sales,Userwise transaction activity report,Productwise Monthly sales/Purchase comparison, Customerwise details \nContact us on  email:Info@techsumsolution.com"],
+                "context": [""]
+        }
+   ]
+}
