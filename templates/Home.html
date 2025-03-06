@@ -1,0 +1,186 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Intelligent Chatbot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="static/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+  function myFunction() {
+     var element = document.getElementById("msger");
+     element.classList.toggle("mystyle");
+  }
+</script>
+
+<style>
+.mystyle {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 867px;
+  margin: 25px 10px;
+  height: calc(100% - 10px);
+  border: var(--border);
+  border-radius: 5px;
+  background: var(--msger-bg);
+  box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  }
+  
+  .pop img{
+    width: 50px;
+    height: 70px;
+  }
+  .pop{
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+  }
+</style>
+</head>
+
+<body>
+  <div onclick="myFunction()" class="pop">
+    <img src="static/chatbox-icon.svg" >
+  </div>
+
+  <!-- partial:index.partial.html -->
+  <section id="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        Intelligent Chatbot 
+      </div>
+    </header>
+
+    <main class="msger-chat">
+      <div class="msg left-msg">
+        <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
+
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Intelligent Chatbot</div>
+          </div>
+
+          <div class="msg-text">
+            Hi, I am Intelligent Chatbot How can I help you?
+            <br><br><button class="button1" input type="submit" onclick="myfunc1()">Aboutus</button> 
+             <button class="button2" input type="submit" onclick="myfunc2()">Services</button> 
+            <button class="button3" input type="submit" onclick="myfunct3()">Products</button>
+            <button class="button4" input type="submit" onclick="myfunc4()">contact</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <form class='msger-inputarea'>
+      <input type="text" class="msger-input" id="textInput" name='text' placeholder="Enter your message..." autocomplete="off">
+      <button type="submit" class="msger-send-btn">Send</button>
+    </form>
+  </section>
+  <!-- partial -->
+  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+   <script>
+     const msgerForm = get(".msger-inputarea");
+    const msgerInput = get(".msger-input");
+    const msgerChat = get(".msger-chat");
+
+
+    // Icons made by Freepik from www.flaticon.com
+    const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
+    const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
+    const BOT_NAME = "Intelligent Chatbot";
+    const PERSON_NAME = "You";
+
+    msgerForm.addEventListener("submit", event => {
+      event.preventDefault();
+
+      const msgText = msgerInput.value;
+      if (!msgText) return;
+
+      appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+      msgerInput.value = "";
+      botResponse(msgText);
+    });
+
+    function appendMessage(name, img, side, text) {
+      //   Simple solution for small apps
+      const msgHTML = `
+<div class="msg ${side}-msg">
+  <div class="msg-img" style="background-image: url(${img})"></div>
+
+  <div class="msg-bubble">
+    <div class="msg-info">
+      <div class="msg-info-name">${name}</div>
+      <div class="msg-info-time">${formatDate(new Date())}</div>
+    </div>
+
+    <div class="msg-text">${text}</div>
+  </div>
+</div>
+`;
+
+      msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+      msgerChat.scrollTop += 500;
+    }
+
+    function botResponse(rawText) {
+
+      // Bot Response
+      $.get('get', { msg: rawText }).done(function (data) {
+        console.log(rawText);
+        console.log(data);
+        const msgText = data;
+        appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+
+      });
+
+    }
+
+
+    // Utils
+    function get(selector, root = document) {
+      return root.querySelector(selector);
+    }
+
+    function formatDate(date) {
+      const h = "0" + date.getHours();
+      const m = "0" + date.getMinutes();
+
+      return `${h.slice(-2)}:${m.slice(-2)}`;
+    }
+
+  function myfunc1() {
+  msgText = "Aboutus";
+  appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+  botResponse(msgText);
+}
+function myfunc2() {
+  msgText = "Services";
+  appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText); 
+  botResponse(msgText);
+}
+
+function myfunc4() {
+  msgText = "contact";
+  appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText); 
+  botResponse(msgText);
+}
+function myfunct3() {
+  msgText = "Products";
+  appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText); 
+  botResponse(msgText);
+}
+
+   </script>
+  
+
+</body>
+
+</html>
